@@ -5,17 +5,17 @@ units           metal
 boundary        p p p
 box tilt large
 atom_style      charge
-read_data       input.data
+read_data       na3ocl.lmp
 
 # Potential Setup
 pair_style  buck/coul/long 12.0
 pair_coeff * * 0.0 1.0 0.0
 pair_coeff 1 1    1788.190000  0.159000   0.000000 # Na Na
 pair_coeff 1 3    1170.410000  0.315000   0.000000 # Na Cl
-pair_coeff 1 4     588.380000  0.338000   0.000000 # Na O 
+pair_coeff 1 2     588.380000  0.338000   0.000000 # Na O 
 pair_coeff 3 3    1227.200000  0.321000  14.530000 # Cl Cl
-pair_coeff 3 4    8286.910000  0.259000  62.200000 # Cl O 
-pair_coeff 4 4   22764.300000  0.149000  13.190000 # O  O 
+pair_coeff 3 2    8286.910000  0.259000  62.200000 # Cl O 
+pair_coeff 2 2   22764.300000  0.149000  13.190000 # O  O 
 kspace_style pppm 1e-05
 
 # General Setup
