@@ -1,0 +1,4 @@
+charge
+Na 1
+O -2
+Cl -1
