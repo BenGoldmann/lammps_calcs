@@ -44,7 +44,7 @@ unfix int
 dump     atom_info all custom 1000 main_nvt_simulation-trajectory.lammpstrj element x y z q id type vx vy vz 
 dump_modify     atom_info append yes
 dump_modify     atom_info sort id
-dump_modify     atom_info element Na Cl O
+dump_modify     atom_info element Na O Cl
 restart         0
 fix             int all nvt temp 300 300 0.5 
 run             2000000

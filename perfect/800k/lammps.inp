@@ -26,7 +26,7 @@ thermo_style custom step temp epair emol etotal press lx ly lz fmax cpu cpuremai
 thermo          1000
 
 # Intial Atom Velocity
-velocity all create 800 80800 dist gaussian rot yes
+velocity all create 300 80800 dist gaussian rot yes
 
 # Stage 0: npt_equilibriation
 restart         0
