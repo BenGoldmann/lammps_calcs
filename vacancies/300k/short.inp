@@ -47,7 +47,7 @@ dump_modify     atom_info sort id
 dump_modify     atom_info element Na O Cl
 restart         0
 fix             int all nvt temp 300 300 0.5 
-run             1000
+run             10000
 
 # Final Commands
 variable final_energy equal etotal
